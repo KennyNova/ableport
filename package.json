@@ -1,24 +1,25 @@
 {
-  "name": "ableport",
-  "version": "0.1.0",
   "private": true,
+  "name": "my-nextron-app",
+  "description": "My application description",
+  "version": "1.0.0",
+  "author": "Yoshihide Shiono <shiono.yoshihide@gmail.com>",
+  "main": "app/background.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "nextron",
+    "build": "nextron build",
+    "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
-    "next": "12.3.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "electron-serve": "^1.1.0",
+    "electron-store": "^8.1.0"
   },
   "devDependencies": {
-    "@types/node": "18.8.5",
-    "@types/react": "18.0.21",
-    "@types/react-dom": "18.0.6",
-    "eslint": "8.25.0",
-    "eslint-config-next": "12.3.1",
-    "typescript": "4.8.4"
+    "electron": "^20.1.0",
+    "electron-builder": "^23.3.3",
+    "next": "^12.2.5",
+    "nextron": "^8.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
